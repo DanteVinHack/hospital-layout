@@ -1,0 +1,64 @@
+.nav {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    justify-content: center;
+
+    // .nav__logo
+    &__logo {
+        height: max(55px, 100%);
+
+        @include nav-padding();
+        @include nav-border();
+    }
+
+    // .nav__img
+    &__img {
+        width: 20px;
+    }
+
+    // .nav__item
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 18px;
+
+        text-align: center;
+
+        list-style: none;
+
+        min-height: 100%;
+        border: 1px solid $gray;
+
+        @include nav-padding();
+    }
+
+    // .nav__link
+    &__link {
+        text-decoration: none;
+        color: $white;
+
+        outline: none;
+    }
+
+    // .nav__wrapper
+    &__wrapper {
+        display: flex;
+        gap: .9rem;
+
+        color: $black;
+    }
+
+    // .nav__svg
+    &__svg {
+        fill: $primary;
+        transition: .3s;
+
+        &:hover {
+            fill: $primary-dark;
+        }
+    }
+
+}

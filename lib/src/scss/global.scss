@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: $black;
+
+    font-family: 'Georama', serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    & * {
+        font-family: 'Georama', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+.container {
+    margin: 0 auto;
+
+    max-width: 100%;
+    width: $container-width;
+    font-family: inherit;
+}
+
+.title {
+    font-family: 'Georama';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.5;
+    color: $white;
+
+    &-primary {
+        color: $primary-dark;
+    }
+}
+
+.subtitle {
+    font-family: 'Georama';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.slider__wrapper {
+    display: flex;
+    z-index: 0;
+    transition: 1s;
+
+    &__img {
+        object-fit: contain;
+        transition: 1s;
+    }
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+}
+
+.svg {
+    width: 24px;
+
+    &__arrow {
+        fill: $white;
+    }
+}
+
+// Left and right
+
+.left {
+    flex: 0 1 40%;
+}
+
+.right {
+    flex: 0 1 60%;
+}

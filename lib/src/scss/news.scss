@@ -1,0 +1,60 @@
+.news {
+    display: flex;
+
+    &__header {
+        padding: 2.2rem 2.5rem;
+
+        background: $primary;
+    }
+
+    &__button {
+        width: 100%;
+        background: $primary;
+
+        &.open {
+            background: $primary-dark;
+        }
+
+        &:hover {
+            background: $primary-dark;
+        }
+    }
+
+    &__article {
+        background: $primary-light;
+
+        padding: 2rem 3.5rem;
+
+        & * {
+            animation: appearance .3s linear;
+        }
+
+        &:not(.open) {
+            display: none;
+        }
+    }
+
+    &__list {
+        padding-left: 1rem;
+    }
+
+    &__item {
+        font-family: 'Georama';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    &__title {
+        font-family: 'Georama';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.5;
+
+        margin: 0;
+
+        color: $black;
+    }
+}

@@ -1,0 +1,60 @@
+.special {
+    position: relative;
+    text-align: center;
+
+    background: $primary-light;
+    padding-top: 5rem;
+    padding-bottom: 12.5rem;
+
+    &__container {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+
+        translate: -50% -50%;
+
+        display: flex;
+        justify-content: space-between;
+        gap: 2.5rem;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        position: relative;
+        color: $white;
+
+        &-header {
+            & img {
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+
+        &-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            translate: 0 -4px;
+            gap: 1rem;
+
+            text-align: left;
+            padding: 0 2rem; 
+            background: $primary-dark;
+
+        }        
+    }
+
+    &__button {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+
+    }
+
+    &__title {
+        margin-top: 0;
+    }
+}

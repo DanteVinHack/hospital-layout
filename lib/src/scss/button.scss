@@ -1,0 +1,65 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 6rem;
+
+    gap: .7rem;
+
+    border: none;
+    outline: none;
+    color: $white;
+
+    padding: .8rem 1.5rem;
+    transition: .3s;
+
+    &-primary {
+        text-transform: uppercase;
+        background: $primary-dark;
+
+        &:hover {
+            background: darken($primary-dark, 10%);
+        }
+    }
+
+    &-primary-light {
+        color: $white;
+        background-color: $primary;
+
+        &:hover {
+            background: darken($primary, 10%);
+        }
+    }
+
+    &-white {
+        background: $white;
+        color: $black;
+
+        &:hover {
+            background: darken($white, 10%);
+        }
+    }
+
+    &-primary-white {
+        background: transparent;
+        border: .1rem solid $white;
+        color: $black;
+
+        height: 100%;
+
+        &:hover {
+            background: darken($primary-dark, 10%);
+            border-color: $primary-dark
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        z-index: 1000;
+
+        transform: translateX(-50%)
+    }
+}

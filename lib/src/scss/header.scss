@@ -1,0 +1,94 @@
+.header {
+    // .header__hero
+    &__hero {
+        width: 100%;
+
+        font-family: 'Georama';
+        color: $white;
+
+        background: $primary;
+
+        & .nav__item {
+            border: none;
+            font-size: 18px;
+        }
+    }
+
+    // .header__body
+    .header__body {
+        display: none;
+
+        &.open {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        // .header__body-left
+        &-left {
+            flex: 1 1 43%;
+
+            padding: 0rem 1rem;
+        }
+
+        // .header__body-right
+        &-right {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            overflow-x: hidden;
+            max-width: 100%;
+            flex: 0 1 750px;
+
+            text-align: right;
+        }
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    &__button {
+        margin-top: 2.5rem;
+    }
+
+    &__footer {
+        width: 100%;
+    }
+
+    &__change {
+        display: flex;
+    }
+
+    &__tab {
+        text-align: center;
+        flex-grow: 1;
+        padding: 1.5rem 3rem;
+        background: $primary;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 1.5;
+
+        &:hover {
+            background: $primary-dark;
+        }
+
+        &.open {
+            flex-grow: 2;
+        }
+
+        &:nth-child(odd) {
+            background: $primary-dark;
+
+            &:hover {
+                background: $primary;
+            }
+        }
+    }
+}
