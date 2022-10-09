@@ -26,43 +26,17 @@ body {
     font-family: inherit;
 }
 
-.title {
-    font-family: 'Georama';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 1.5;
-    color: $white;
-
-    &-primary {
-        color: $primary-dark;
-    }
-}
-
-.subtitle {
-    font-family: 'Georama';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 1.5;
-}
-
-.text {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
+.flex {
+    display: flex;
 }
 
 .slider__wrapper {
     display: flex;
     z-index: 0;
-    transition: 1s;
+    transition: .75s;
 
     &__img {
         object-fit: contain;
-        transition: 1s;
     }
 }
 
