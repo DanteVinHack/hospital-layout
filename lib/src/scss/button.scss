@@ -14,7 +14,7 @@
     padding: .8rem 1.5rem;
     transition: .3s;
 
-    &-primary {
+    &--primary {
         text-transform: uppercase;
         background: $primary-dark;
 
@@ -23,7 +23,7 @@
         }
     }
 
-    &-primary-light {
+    &--primary-light {
         color: $white;
         background-color: $primary;
 
@@ -32,7 +32,7 @@
         }
     }
 
-    &-white {
+    &--white {
         background: $white;
         color: $black;
 
@@ -41,7 +41,7 @@
         }
     }
 
-    &-primary-white {
+    &--primary-white {
         background: transparent;
         border: .1rem solid $white;
         color: $black;
@@ -54,7 +54,7 @@
         }
     }
 
-    &__wrapper {
+    &-wrapper {
         display: flex;
         position: absolute;
         left: 50%;
